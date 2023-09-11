@@ -1,0 +1,210 @@
+body {
+    background-image: url("https://www.spicybaboon.com.au/cdn/shop/products/thomas-the-dank-engine-sticker-39929742000413_800x.png?v=1669698833");
+    background-repeat: repeat;
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    color: blue;
+    background-color: blueviolet;
+    background-opacity: 0.6;
+    font-size: 15;
+}
+
+
+/* Flexbox layout */
+.column {
+    float: left;
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+    text-align: left;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Rivien siirto allekkain kun ikkunan koko pienene */
+@media screen and (max-width:600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+
+/* Navigointipalkki */
+.navigointi_li {
+    float: left;
+    display: inline;
+    border-right: 1px solid #bbb;
+}
+
+.navigointi_li:last-child{
+    border-right: none;
+}
+
+.navigointi_ul {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    list-style-type: none;
+    margin: 0; 
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.active {
+    background-color: black;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+
+/* Uusi palkki */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+/* Tiputusvalikko */
+.dropdown .dropnappi {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropnappi {
+    background-color: red;
+}
+
+
+/* <div> varten sijainnin määrittämiseen */
+/*.dropdown {
+    position: relative;
+    display: inline-block;
+}
+*/
+.dropdown-sisältö {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Dropdownin sisällä olevat linkit */
+.dropdown-sisältö a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Muuta dropdown linkin väriä hiiren alla */
+.dropdown-sisältö a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Näytä dropdown valikko hiiren alla */
+.dropdown:hover .dropdown-sisältö {
+    display: block;
+}
+
+/* Muuta dropdownin napin taustäväri hiiren alla */
+.dropdown:hover .dropnappi {
+    background-color: black;
+}
+
+/* Luokat */
+
+.otsikko {
+    background-color:rgba(0, 255, 255, 0.3);
+    color: black;
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.sisältö
+
+
+/* Linkkien muotoilu ja käyttytyminen*/
+
+a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(39, 1, 86);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+/* Taulukon muotoilu */
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}

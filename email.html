@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email</title>
+    <link rel="stylesheet" href="email-style.css">
+</head>
+<body>
+    
+    <!--Navigointipalkki-->
+    
+    
+    <ul class="navigointi_ul">
+        <li class="navigointi_li"><a href="Intro.html">Koti</a></li>
+        <li class="navigointi_li"><a href="#uutiset">Uutiset</a></li>
+        <li class="navigointi_li active"><a href="email.html">Yhteystiedot</a></li>
+        <li class="navigointi_li"><a href="#tietoa">Tietoa meistä</a></li>
+    </ul>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-10">
+            <label for="from">Nimesi:</label>
+        </div>
+        <div class="col-75">
+            <input type="text" name="from" id="from">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-10">
+            <label for="email">Sähköpostiosoitteesi:</label>
+        </div>
+        <div class="col-75">
+            <input type="text" name="email" id="email">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-10">
+            <label for="aihe">Valitse aihe:</label>
+        </div>
+        <div class="col-75">
+        <select name="aihe" id="aihe">
+            <option value="blank"></option>
+            <option value="ongelma">Ongelmia kirjautumisessa</option>
+            <option value="yhteydenotto">Yhteydenottopyyntö</option>
+            <option value="parannus">Parannusehdotus</option>
+        </select>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-10">
+            <label for="viesti"></label>
+        </div>
+        <div class="col-75">
+            <textarea name="viesti" id="viesti" placeholder="Kerro aiheesta tarkemmin..." style="height:200px;">
+            </textarea>
+        </div>
+    </div>
+    <div class="row">
+        <input type="submit" value="submit">
+    </div>
+</div>   
+
+</body>
+</html>
