@@ -1,0 +1,6 @@
+    ---
+    deployment:
+      tasks:
+        - export DEPLOYPATH=/home/jokinent/repositories/johdatus-ohjelmointiin/
+        - /bin/cp Intro.html $DEPLOYPATH
+        - /bin/cp Intro.css $DEPLOYPATH
